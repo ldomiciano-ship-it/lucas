@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPR - Marketplace de Produtores do Paraná</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Agro<span>PR</span></h1>
+                <small>Direto do campo paranaense</small>
+            </div>
+            <nav>
+                <a href="#produtos">Produtos</a>
+                <a href="#produtores">Produtores</a>
+                <button id="cart-btn">Carrinho (<span id="cart-count">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>A Força da Nossa Terra Conectada a Você</h2>
+            <p>Compre direto de cooperativas e produtores locais do Norte Pioneiro ao Oeste do Paraná.</p>
+            <a href="#produtos" class="btn-main">Explorar Produtos</a>
+        </div>
+    </section>
+
+    <section class="filtros container">
+        <h3>Filtrar por Região do Paraná:</h3>
+        <div class="regioes-botoes">
+            <button class="btn-filtro active" data-regiao="todos">Todos</button>
+            <button class="btn-filtro" data-regiao="Oeste">Oeste (Grãos e Proteínas)</button>
+            <button class="btn-filtro" data-regiao="Norte">Norte Pioneiro (Cafés Especiais)</button>
+            <button class="btn-filtro" data-regiao="Sudoeste">Sudoeste (Laticínios)</button>
+            <button class="btn-filtro" data-regiao="RMC">Região de Curitiba (Hortifrúti)</button>
+        </div>
+    </section>
+
+    <main class="container" id="produtos">
+        <h2>Produtos em Destaque</h2>
+        <div class="produtos-grid" id="produtos-container">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AgroPR - Marketplace do Agronegócio Paranaense. Orgulho de ser daqui.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
